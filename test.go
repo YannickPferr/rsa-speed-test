@@ -31,7 +31,7 @@ func main() {
 		count++
 	}
 
-	fmt.Printf("managed to encrypt %v keys in %v seconds; encryption rate %v keys/s \n", count, timeLimit, count/10)
+	fmt.Printf("managed to encrypt %v keys in %v; encryption rate %v keys/s \n", count, timeLimit, count/10)
 
 	count = 0
 	for start := time.Now(); time.Since(start) < timeLimit; {
@@ -40,5 +40,5 @@ func main() {
 		count++
 	}
 
-	fmt.Printf("managed to decrypt %v keys in %v seconds; decryption rate %v keys/s \n", count, timeLimit, count/10)
+	fmt.Printf("managed to decrypt %v keys in %v; decryption rate %v keys/s \n", count, timeLimit, count/10)
 }
